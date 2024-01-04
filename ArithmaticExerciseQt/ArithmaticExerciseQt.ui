@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArithmaticExerciseQtClass</class>
+ <widget class="QMainWindow" name="ArithmaticExerciseQtClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ArithmaticExerciseQt</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="LOGO">
+       <widget class="QFrame" name="logo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>1231</width>
+          <height>901</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.75, x2:1, y2:0.25, stop:0.2 rgba(22, 55, 89, 255), stop:1 rgba(132, 143, 171, 255));
+border-radius:20;
+}
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="placeLOGOhere">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>360</y>
+           <width>541</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>72</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+         </property>
+         <property name="text">
+          <string>LOGO here</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="MAIN_MENU">
+       <widget class="QFrame" name="content">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>120</y>
+          <width>1231</width>
+          <height>791</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.75, x2:1, y2:0.25, stop:0.2 rgba(22, 55, 89, 255), stop:1 rgba(132, 143, 171, 255));
+border-bottom-left-radius: 20;
+border-bottom-right-radius: 20;
+}
+</string>
+        </property>
+        <widget class="QFrame" name="answerPanelFrame">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>570</y>
+           <width>1021</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgba(220, 220, 230, 255);
+border-radius: 20
+}
+</string>
+         </property>
+         <widget class="QPushButton" name="submitButton">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>60</y>
+            <width>221</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>点字浅夏体</family>
+            <pointsize>27</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color: rgba(231, 234, 240, 255);
+	border-color: rgba(30, 40, 50, 255);
+	border-radius: 20;
+	border-width: 3px;
+	border-style: solid;
+}
+QPushButton:hover{
+	background-color: rgba(220, 220, 230, 255);
+	border-color: rgba(30, 40, 50, 255);
+	border-radius: 20;
+	border-width: 3px;
+	border-style: solid;
+}
+QPushButton:pressed{
+	background-color: rgba(191, 191, 200, 255);
+	border-color: rgba(30, 40, 50, 255);
+	border-radius: 20;
+	border-width: 3px;
+	border-style: solid;
+}</string>
+          </property>
+          <property name="text">
+           <string>CONFIRM</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="selectionsFrame">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>50</y>
+            <width>731</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="sA">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>19</y>
+             <width>131</width>
+             <height>62</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>40</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="sB">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>19</y>
+             <width>168</width>
+             <height>62</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>40</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="sC">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>19</y>
+             <width>168</width>
+             <height>62</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>40</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="sD">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>19</y>
+             <width>168</width>
+             <height>62</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>40</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectA">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>10</y>
+             <width>131</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectB">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>10</y>
+             <width>131</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectC">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>10</y>
+             <width>131</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectD">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>10</y>
+             <width>131</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>sA</zorder>
+          <zorder>sB</zorder>
+          <zorder>sC</zorder>
+          <zorder>sD</zorder>
+          <zorder>selectB</zorder>
+          <zorder>selectC</zorder>
+          <zorder>selectD</zorder>
+          <zorder>selectA</zorder>
+         </widget>
+         <widget class="QLabel" name="selectCursor">
+          <property name="geometry">
+           <rect>
+            <x>600</x>
+            <y>77</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>res/select_target.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QStackedWidget" name="questionPanelStackedWidget">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>30</y>
+           <width>591</width>
+           <height>511</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background-color: rgba(220, 220, 230, 255);
+border-radius: 20
+}
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="mainPage">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: rgba(220, 220, 230, 255);
+}
+</string>
+          </property>
+          <widget class="QFrame" name="newPracticeButtonFrame">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>90</y>
+             <width>481</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="newPracticeIcon">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>30</y>
+              <width>64</width>
+              <height>64</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>res/newpractice_button.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="newPracticeText">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>40</y>
+              <width>301</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>点字浅夏体</family>
+              <pointsize>36</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>New Practice</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="selectNewPractice">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>471</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 60);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255, 160);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="continueButtonFrame">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>250</y>
+             <width>481</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="continueIcon">
+            <property name="geometry">
+             <rect>
+              <x>32</x>
+              <y>30</y>
+              <width>60</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>res/continue_button.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="continueText">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>40</y>
+              <width>301</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>点字浅夏体</family>
+              <pointsize>36</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Continue</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="selectContinue">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>481</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255, 60);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255, 160);
+	border-color: rgba(30, 40, 50, 255);
+	border-style: solid;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="newPracticePage">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: rgba(220, 220, 230, 255);
+}
+</string>
+          </property>
+          <widget class="QPushButton" name="selectAddtion">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>160</y>
+             <width>231</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>HarmonyOS Sans SC Black</family>
+             <pointsize>52</pointsize>
+             <bold>false</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>res/addtion.png</normaloff>res/addtion.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>128</width>
+             <height>128</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectMultiplication">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>370</y>
+             <width>231</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>HarmonyOS Sans SC Black</family>
+             <pointsize>52</pointsize>
+             <bold>false</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>res/multiplication.png</normaloff>res/multiplication.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>128</width>
+             <height>128</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectSubtraction">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>170</y>
+             <width>231</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>HarmonyOS Sans SC Black</family>
+             <pointsize>52</pointsize>
+             <bold>false</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>res/substraction.png</normaloff>res/substraction.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>128</width>
+             <height>128</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="selectDivision">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>360</y>
+             <width>231</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>HarmonyOS Sans SC Black</family>
+             <pointsize>52</pointsize>
+             <bold>false</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>res/division.png</normaloff>res/division.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>128</width>
+             <height>128</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QSlider" name="questionAmountSlider">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>40</y>
+             <width>491</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="pageStep">
+            <number>1</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>10</number>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>330</y>
+             <width>521</width>
+             <height>5</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_3">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>150</y>
+             <width>5</width>
+             <height>360</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>80</y>
+             <width>511</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>点字浅夏体</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0      10     20    30     40     50    60     70     80     90    100</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>10</y>
+             <width>331</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>20</pointsize>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>Set Question Amount↓</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>135</x>
+             <y>120</y>
+             <width>331</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>站酷快乐体2016修订版</family>
+             <pointsize>20</pointsize>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>Choose Question Type↓</string>
+           </property>
+          </widget>
+          <zorder>selectAddtion</zorder>
+          <zorder>selectMultiplication</zorder>
+          <zorder>selectSubtraction</zorder>
+          <zorder>selectDivision</zorder>
+          <zorder>line_2</zorder>
+          <zorder>line_3</zorder>
+          <zorder>questionAmountSlider</zorder>
+          <zorder>label</zorder>
+          <zorder>label_2</zorder>
+          <zorder>label_3</zorder>
+         </widget>
+         <widget class="QWidget" name="questionPage">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+background-color: rgba(220, 220, 230, 255);
+}
+</string>
+          </property>
+          <widget class="QLabel" name="title">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>55</y>
+             <width>411</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>点字浅夏体</family>
+             <pointsize>62</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Question</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>130</y>
+             <width>521</width>
+             <height>3</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="question">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>190</y>
+             <width>471</width>
+             <height>231</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>贤二体</family>
+             <pointsize>60</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="settlementPage">
+          <widget class="QLabel" name="staticSettleAccuracyRate">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>390</y>
+             <width>421</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Facon</family>
+             <pointsize>32</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Accuracy Rate: </string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="settleAccuracyRate">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>390</y>
+             <width>141</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Facon</family>
+             <pointsize>32</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="level1">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>340</width>
+             <height>340</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>res/level1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="level2">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>340</width>
+             <height>340</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>res/level2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="level3">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>340</width>
+             <height>340</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>res/level3.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <zorder>staticSettleAccuracyRate</zorder>
+          <zorder>settleAccuracyRate</zorder>
+          <zorder>level3</zorder>
+          <zorder>level2</zorder>
+          <zorder>level1</zorder>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="questionPanelFrameShadow">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>20</y>
+           <width>611</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgba(220, 220, 230, 255);
+border-radius: 20
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="answerPanelCover" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>98</x>
+           <y>570</y>
+           <width>1025</width>
+           <height>193</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background-color: qlineargradient(spread:pad, x1:0.2, y1:1, x2:1, y2:0.25, stop:0.1 rgba(22, 55, 89, 255), stop:1 rgba(112, 123, 151, 255));
+border-radius: 20;
+}
+</string>
+         </property>
+         <widget class="QLabel" name="slogan">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>70</y>
+            <width>701</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>站酷快乐体2016修订版</family>
+            <pointsize>27</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>Day after day, there must be progress</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="statisticsPanelCover" native="true">
+         <property name="geometry">
+          <rect>
+           <x>729</x>
+           <y>20</y>
+           <width>393</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background-color: qlineargradient(spread:pad, x1:0.75, y1:1, x2:0.5, y2:0, stop:0.2 rgba(42, 75, 109, 255), stop:1 rgba(122, 123, 161, 255));
+border-radius: 20;
+}
+</string>
+         </property>
+         <widget class="QLabel" name="greeting">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>341</width>
+            <height>256</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>站酷快乐体2016修订版</family>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>Ciallo～(∠・ω&lt; )⌒★</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="statisticsPanelFrame">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>20</y>
+           <width>391</width>
+           <height>531</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgba(220, 220, 230, 255);
+border-radius: 20
+}
+</string>
+         </property>
+         <widget class="QLabel" name="sad">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>150</y>
+            <width>291</width>
+            <height>256</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>站酷快乐体2016修订版</family>
+            <pointsize>32</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>( ´•︵•` )</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="smile">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>150</y>
+            <width>321</width>
+            <height>256</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>站酷快乐体2016修订版</family>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>d=====(￣▽￣*)b</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="thinking">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>150</y>
+            <width>301</width>
+            <height>256</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>站酷快乐体2016修订版</family>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>【・ヘ・?】</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <zorder>questionPanelFrameShadow</zorder>
+        <zorder>answerPanelFrame</zorder>
+        <zorder>questionPanelStackedWidget</zorder>
+        <zorder>answerPanelCover</zorder>
+        <zorder>statisticsPanelFrame</zorder>
+        <zorder>statisticsPanelCover</zorder>
+       </widget>
+       <widget class="QFrame" name="top">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>10</y>
+          <width>1231</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>125</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.25, x2:1, y2:0.75, stop:0 rgba(22, 55, 89, 255), stop:1 rgba(132, 143, 171, 255));
+border-top-left-radius: 20;
+border-top-right-radius: 20;
+}
+</string>
+        </property>
+        <widget class="QPushButton" name="closeButton">
+         <property name="geometry">
+          <rect>
+           <x>1130</x>
+           <y>17</y>
+           <width>71</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>res/close_button.png</normaloff>res/close_button.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="backButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>81</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>res/back_button.png</normaloff>res/back_button.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLabel" name="accuracyRate">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>50</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>点字浅夏体</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Accuracy Rate: qwq</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="date">
+         <property name="geometry">
+          <rect>
+           <x>710</x>
+           <y>50</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>点字浅夏体</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Date: pwq</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="questionsAmount">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>50</y>
+           <width>201</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>点字浅夏体</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Questions Amount: qwp</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="practiceMode">
+         <property name="geometry">
+          <rect>
+           <x>890</x>
+           <y>50</y>
+           <width>231</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>点字浅夏体</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Practice Mode: pwp</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="logo_math">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>10</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>res/logo_math.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="testOutput">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>880</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ArithmaticExerciseQt.qrc"/>
+ </resources>
+ <connections/>
+</ui>

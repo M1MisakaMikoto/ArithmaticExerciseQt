@@ -1,0 +1,68 @@
+{
+	"questionsAmount":	10,
+	"completionProgress":	3,
+	"correctQuantity":	3,
+	"questionType":	4,
+	"questions":	{
+		"2":	{
+			"firstMultiplier":	1,
+			"secondMultiplier":	1,
+			"signal":	"÷",
+			"answer":	1
+		},
+		"1":	{
+			"firstMultiplier":	1,
+			"secondMultiplier":	2,
+			"signal":	"÷",
+			"answer":	0.5
+		},
+		"5":	{
+			"firstMultiplier":	1,
+			"secondMultiplier":	3,
+			"signal":	"÷",
+			"answer":	0.33
+		},
+		"7":	{
+			"firstMultiplier":	1,
+			"secondMultiplier":	4,
+			"signal":	"÷",
+			"answer":	0.25
+		},
+		"10":	{
+			"firstMultiplier":	2,
+			"secondMultiplier":	1,
+			"signal":	"÷",
+			"answer":	2
+		},
+		"3":	{
+			"firstMultiplier":	2,
+			"secondMultiplier":	2,
+			"signal":	"÷",
+			"answer":	1
+		},
+		"6":	{
+			"firstMultiplier":	2,
+			"secondMultiplier":	3,
+			"signal":	"÷",
+			"answer":	0.67
+		},
+		"9":	{
+			"firstMultiplier":	2,
+			"secondMultiplier":	4,
+			"signal":	"÷",
+			"answer":	0.5
+		},
+		"8":	{
+			"firstMultiplier":	3,
+			"secondMultiplier":	1,
+			"signal":	"÷",
+			"answer":	3
+		},
+		"4":	{
+			"firstMultiplier":	3,
+			"secondMultiplier":	2,
+			"signal":	"÷",
+			"answer":	1.5
+		}
+	}
+}
